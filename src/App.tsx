@@ -19,34 +19,35 @@ const userList = [{
   uname:"Akash",
   image:"https://cdn-icons-png.flaticon.com/512/168/168732.png"
 },{
-  uname:"Ankit",
+  uname:"Ashwary",
   image:"https://cdn-icons-png.flaticon.com/512/168/168732.png"
 },{
-  uname:"Ankit",
+  uname:"Ankesh",
   image:"https://cdn-icons-png.flaticon.com/512/168/168732.png"
 },{
-  uname:"Ankit",
+  uname:"Shree",
   image:"https://cdn-icons-png.flaticon.com/512/168/168732.png"
 },{
-  uname:"Ankit",
+  uname:"Danial",
   image:"https://cdn-icons-png.flaticon.com/512/168/168732.png"
 },{
-  uname:"Ankit",
+  uname:"James",
   image:"https://cdn-icons-png.flaticon.com/512/168/168732.png"
 },{
-  uname:"Ankit",
+  uname:"Clayton",
   image:"https://cdn-icons-png.flaticon.com/512/168/168732.png"
 },]
+
 const generateUsers = () => {
   return userList.map((item, index)=>{
-    return <Tile width={50} uname = {item.uname} image = {item.image} />
+    return <Tile uname = {item.uname} image = {item.image} />
   })
 }
 function App() {
   return (
     <>
     <p>Google Meet</p>
-    <div style={{display: "flex", flex:1, flexWrap: "wrap"}}>
+    <div style={{display:"flex", flexWrap:"wrap"}}>
       {generateUsers()}
     </div>
     </>
